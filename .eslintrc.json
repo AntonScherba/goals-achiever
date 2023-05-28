@@ -1,0 +1,33 @@
+{
+  "extends": ["react-app", "react-app/jest", "prettier"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "prefer-const": "error",
+    "react/jsx-sort-props": [
+      1,
+      {
+        "callbacksLast": true,
+        "shorthandLast": true,
+        "ignoreCase": true
+      }
+    ],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always-and-inside-groups"
+      }
+    ]
+  },
+  "plugins": ["prettier"]
+}
